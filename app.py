@@ -8,6 +8,8 @@ from flask_cors import CORS
 import traceback
 
 nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('all')
 
 def create_frequency_table(text_string) -> dict:
     #removing stop words
