@@ -113,7 +113,7 @@ def get_summary():
             threshold = find_average_score(sentence_scores)
 
             # Important Algorithm: Generate the summary
-            summary = generate_summary(sentences, sentence_scores, 1.8 * threshold)
+            summary = generate_summary(sentences, sentence_scores, 1.2 * threshold)
 
             return jsonify(summary=summary)
         return {'data': """Welcome to the Page Summarizer API.
@@ -124,4 +124,4 @@ def get_summary():
         return jsonify({'trace': traceback.format_exc()})
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(host='0.0.0.0' port=5000)
