@@ -6,6 +6,8 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import traceback
 
+nltk.download('stopwords')
+
 def create_frequency_table(text_string) -> dict:
     #removing stop words
     stop_words = set(stopwords.words("english"))
