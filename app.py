@@ -1,4 +1,5 @@
 # pylint: disable=invalid-name
+import nltk
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
 from nltk.tokenize import word_tokenize, sent_tokenize
@@ -126,4 +127,4 @@ def get_summary():
         return jsonify({'trace': traceback.format_exc()})
 
 if __name__ == '__main__':
-    app.run(host='localhost', debug=True, port=5000)
+    app.run(host='0.0.0.0', debug=True, port=5000)
