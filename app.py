@@ -90,7 +90,7 @@ def generate_summary(sentences, sentenceValue, threshold):
 app = Flask(__name__)
 CORS(app)
 
-@app.route('/api/summarize', methods=['POST'])
+@app.route('/api/summarize', methods=['POST', 'GET'])
 def get_summary():
     try:
         if request.method == 'POST':
@@ -124,4 +124,4 @@ def get_summary():
         return jsonify({'trace': traceback.format_exc()})
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0' port=5000)
+    app.run(host='localhost', debug=True, port=5000)
