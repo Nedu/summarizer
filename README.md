@@ -1,5 +1,11 @@
 # Story Summarizer
 
+# About Project
+
+├── app.py  
+└── Pipfile  
+├── README.md  
+
 # Installation Guide
 ## Testing Locally
 ### Cloning the repository 
