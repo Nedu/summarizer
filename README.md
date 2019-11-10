@@ -1,6 +1,10 @@
 # Story Summarizer
+This is a summarizer that summarizes any story passed into it using an extractive technique.
 
-# About Project
+# Getting Started
+These instructions should get you up and running with the project on your local system for development and testing.
+
+# Project Structure
 
 ├── app.py  
 └── Pipfile  
